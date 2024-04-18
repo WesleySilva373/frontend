@@ -1,0 +1,12 @@
+
+
+:root,:root[data-theme='dark'] {
+--primary-color: #f0f0f0;
+--primary-bg-color: #a82d2d;
+}
+
+:root[data-theme='ligth'] {
+    --primary-color: #2d269752;
+    --primary-bg-color: #16173a;
+    }
+    
