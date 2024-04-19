@@ -3,7 +3,7 @@
 :root,:root[data-theme='dark'] {
 --primary-color: #0a0a0a;/* cor de texto */
 --segundary-color: #f0f0f0; /* 2 cor de testo */
---primary-bg-color: #e02121;/*  cor de fundo */
+--primary-bg-color: #131111;/*  cor de fundo */
 --segundary-by-color:#f0f0f0; /* bg=fundo  */
 --primary-border-color:#f0f0f0;
 --segundary-borde-color: #f0f0f0;
@@ -70,3 +70,9 @@ body{
 
 
  }
+ .header-logo .logo{
+ width: 3.25rem;
+ height: 3.25rem;
+ }
+
+ 
