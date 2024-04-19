@@ -1,12 +1,72 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 
 :root,:root[data-theme='dark'] {
---primary-color: #f0f0f0;
---primary-bg-color: #a82d2d;
+--primary-color: #0a0a0a;/* cor de texto */
+--segundary-color: #f0f0f0; /* 2 cor de testo */
+--primary-bg-color: #e02121;/*  cor de fundo */
+--segundary-by-color:#f0f0f0; /* bg=fundo  */
+--primary-border-color:#f0f0f0;
+--segundary-borde-color: #f0f0f0;
+
+--title-color: #f0f0f0;
+--text-color: #f0f0f0;
+--link-color:#f0f0f0;
+--icon-color: #f0f0f0;
+
+
 }
 
 :root[data-theme='ligth'] {
-    --primary-color: #2d269752;
+    --primary-color: #d3d3d452;
     --primary-bg-color: #16173a;
-    }
-    
+    --segundary-bg-color: #f0f0f0;
+    --primary-boder-color: #f0f0f0;
+    --segundary-border-color:#f0f0f0;
+
+    --titler-color: #f0f0f0;
+    --text-color:#f0f0f0;
+    --link-color: #f0f0f0;
+    --icon-color:#f0f0f0;
+
+}
+html[data-theme='light'].brand-logo{
+filter:invert(1);
+}
+html[data-theme='light'] .tecnologias-logo{
+      filter: invert(80%);
+}
+/*(*) reset do css */
+*{
+margin: 0px; /* margem */
+padding: 0px; /* prenchimento  */ /* espaçamento */
+box-sizing: border-box;
+vertical-align: baseline;
+list-style: none;
+scrollbar-width: thin;
+scrollbar-color: var(--segundary-by-color)transparent;
+}
+body{
+    background: var(--primary-bg-color);
+    font-family: 'inter',tahoma,geneva,verdana,sans-serif;
+    color: var(--text-color);
+}
+ /*  conteudo extra */
+
+ #header{
+    display: flex;
+    flex-flow: rom wrap;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+ }
+
+ .header-toggle {
+    display: flex;
+    justify-content: flex-end ;
+
+
+
+
+ }
