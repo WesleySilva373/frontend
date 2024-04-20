@@ -74,5 +74,51 @@ body{
  width: 3.25rem;
  height: 3.25rem;
  }
+#toggleteme{
+ font-size: 1.5rem;
+ color: var(--icon-color);
+ cursor: pointer;
+ transition: ease-in-out .4rem;
+ }
+ .menu{
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg-color);
+ }
+ .menu-item{
+    width: 100%;
+ }
 
- 
+ menu-link{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+ }
+
+ .menu-mobile{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px sold var(--primary-boder-color);
+ }
+
+ .menu-mobile .menu-link{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+ }
+ .menu-link.active .menu-icon,
+ .menu-link .menu-text,
+ .menu-link:houver .menu-icon,
+ .menu-link:houve .menu-text{
+    color: var(--primary-color);
+ }
+
+ .menu-icon, .menu-text{
+    color: var(--text-color)
+ }
+ .menu-icon{
+    font-size: 1.5rem;
+    
+ }
