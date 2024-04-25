@@ -183,7 +183,7 @@ p {
 
 .menu-mobile .menu-link {
     flex-direction: column;
-    /* definir a direção principal dos itens em uma coluna vertical */
+   position: fixed;  /* definir a direção principal dos itens em uma coluna vertical */
     justify-content: center;
     padding: 0.5rem 1rem;
 }
