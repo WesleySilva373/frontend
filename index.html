@@ -19,30 +19,32 @@
 <header id="header">  <!-- cabeçalho -->
     <nav class="header-nav">  
         <ul class="menu menu-principal">
-          <li class="menu item">
+          <li class="menu-item">
             <a href="#home" class="menu-link active"> 
               <span class="menu-text"> home  </span>
             </a>
           </li>
-          <ul class="menu menu-principal">
-            <li class="menu item">
-              <a href="#projeto" class="menu-link"> 
-                <span class="menu-text"> projeto </span>
-              </a>
-              <ul class="menu menu-principal">
-                <li class="menu item">
-                  <a href="#sobre" class="menu-link"> 
-                    <span class="menu-text"> sobre </span>
-                  </a>
-                  <ul class="menu menu-principal">
-                    <li class="menu item">
-                      <a href="#contato" class="menu-link"> 
-                        <span class="menu-text"> contato </span>
-                      </a>
+          <li class="menu-item">
+            <a href="#projetos" class="menu-link "> 
+              <span class="menu-text"> projetos </span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#sobre" class="menu-link "> 
+              <span class="menu-text"> sobre </span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#contato" class="menu-link "> 
+              <span class="menu-text"> contato </span>
+            </a>
+          </li>
+         
+           
           </ul>
     </nav>
     <div class="header-logo"> <!-- area logo -->
-      <a href="home">
+      <a href="#home">
         <img src="img/logo.png" alt=""class="logo">
 
 
@@ -51,53 +53,103 @@
     </div> <!--  fim caixa logo -->
 
     <div class ="head-toggle">
-      <i id="togglethemr"class="bi bi-sun"></i>
+      <i id="toggleTheme"class="bi bi-sun"></i>
     </div>
 
   </header>
   <!-- fim cabeçalho -->
   <!-- menu mobile -->
-  <nav class="nav mobile">
+  <nav class="nav-mobile">
     <ul class="menu menu-mobile">
      
       <li class="menu-item">
       <a class="menu-link active" href="#home">
         <i class=" menu-icon bi bi-house-door"></i>
-        <span class="menu text-mobile">home</span>
+        <span class="menu-text">home</span>
         </a>
       </li>
 
       <li class="menu-item">
         <a class="menu-link " href="#projeto">
-          <i class=" menu-icon bi bi house-door"></i>
-          <span class="menu text-mobile">projeto</span>
+          <i class=" menu-icon bi bi-window-stack"></i>
+          <span class="menu-text">projeto</span>
           </a>
         </li>
 
         <li class="menu-item">
-          <a class="menu-link active" href="#sobre">
+          <a class="menu-link " href="#sobre">
             <i class=" menu-icon bi bi-person"></i>
-            <span class="menu text-mobile">sobre</span>
+            <span class="menu-text">sobre</span>
             </a>
           </li>
 
           <li class="menu-item">
-            <a class="menu-link active" href="#contato">
+            <a class="menu-link " href="#contato">
               <i class=" menu-icon bi bi-envelope"></i>
-              <span class="menu text-mobile">contato</span>
+              <span class="menu-text">contato</span>
               </a>
             </li>
-      
-    
-  
+            </nav>
+            <!-- fim menu mobile -->
+      <main id="home">
+      <div class="main-content">
+        <h1> <b> soluções criativas & </b> trabalhador</h1>
+        <p> wesley da silva,são paulo-sp, tentando ser dev front-end.    </p>
+        <ul class="menu menu-social">
+       <li>
+        <a class="menu-link" href="" target="_blank">
+          <i class="menu-icon bi bi-github"></i>
+        </a>
+      </li>
 
+        <a class="menu-link" href="" target="_blank">
+          <i class="menu-icon bi bi-linkedin"></i>
+        </a>
+      </li>
 
+        <a class="menu-link" href="" target="_blank">
+          <i class="menu-icon bi bi-instagram"></i>
+
+          <a class="menu-link" href="" target="_blank">
+            <i class="menu-icon bi bi-facebook"></i>
+          </a>
         
 
-    </ul>
+</li>
+        </ul>
+        <a href="#projetos">
+          <button class="btn btn-primary">
+            <span> ver projetos </span>
+            <i class="bi bi-arrow-down-rinht"></i>
+          </button>
+        </a>
+      </div><!-- fim man content -->
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/t4EnCa-Lf18" title="Eu sendo fã de séries e o Google me entende" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 
-  </nav>
-<body>
+        </iframe>
+      </div>
+      </main>
+      <section class="tecnologias">
+        <h2> conhecimento nas princpais tecnologias do mercado</h2>
+
+        <ul class="tecnologias-lista">
+          <li class="tecnologia-item">
+            <img class="tecnologia-logo" src="img/tecnologias/HTML5.svg" alt="Logo HTML 5">
+          </li>
+          <li class="tecnologia-item">
+            <img class="tecnologia-logo" src="img/tecnologias/Css.svg" alt="Logo Css 3">
+          </li>
+          <li class="tecnologia-item">
+            <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="Logo Bootstrap">
+          </li>
+          <li class="tecnologia-item">
+            <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="Logo JavaScript">
+          </li>
+        </ul>
+
+      </section>
+
   
 </body>
 </html>
