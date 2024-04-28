@@ -2,19 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 
 :root, :root[data-theme='dark'] {
-    --primary-color: #F0F0F0;  /* cor de texto */
+    --primary-color: #fcfcfc;  /* cor de texto */
     
-    --primary-bg-color: #111217;  /* cor de fundo  */
+    --primary-bg-color: #0c0c0c;  /* cor de fundo  */
     /* bg = background = plano de fundo */
-    --secondary-bg-color: #28292E;
-    --primary-border-color: #28292E;
-    --secundary-border-color: #56575A;
+    --secondary-bg-color: #fffaf8;/*  fundo abaixo do video */
+    --primary-border-color: #0c0b0b;
+    --secundary-border-color: #455efa;
 
-    --title-color: #F0f0f0;
-    --text-color: #9a9a9c;
-    --text-color-mobile: blue;
-    --link-color: #9a9a9c;
-    --icon-color: #c7c8c9;
+    --title-color: #8cb0b0; /* cor de etxto principal */
+    --text-color: #d8d8b2; /*  cor de texto */
+    --text-color-mobile: rgb(232, 232, 241);
+    --link-color: #ece7e7;
+    --icon-color: #f7f7fa; /* cor da seta */
 
 }
 
@@ -25,10 +25,10 @@
     --primary-border-color:  #C7c8c9;
     --secondary-border-color: #9a9a9c;
 
-    --title-color: #0b0b0f;
-    --text-color: #28292e;
+    --title-color: #8cb0b0;
+    --text-color: #d8d8b2;
     --link-color: #28292e;
-    --icon-color: #56575a;
+    --icon-color: #ffffff;
 }
 /*
 definindo variáveis de cores para um tema claro e um tema escuro
@@ -119,6 +119,7 @@ p, span, li {
 }
 p {
     text-align: justify;
+    font-size: 1.3rem;
 }
 
 /***/
@@ -200,6 +201,7 @@ p {
 }
 .menu-icon{
     font-size: 1.5rem;
+    color: #ededf1;
 }
 .menu-text {
     font-size: .75rem;
@@ -237,9 +239,10 @@ p {
 .btn span, .btn i{
    font-size: 1.25rem ;
    text-transform: uppercase;
+   color: #C7c8c9;
 }
 .btn-primary span{
-   color: var(--primary-color);
+   color: var(--#C7c8c9);
 }
 .btn-primary{
    border: 1px solid var(--primary-color)
@@ -330,6 +333,7 @@ p {
     justify-content: flex-end;
     align-items: flex-start;
     gap: 1rem;
+    
 }
 
 .card-title{
@@ -340,12 +344,14 @@ p {
 
 .card-descricao{
  color: var(--title-color);
+ font-size: 1.3rem;
 }
 .card-lista, .sobre-lista{
     margin-left: 1.25rem;
 }
 .card-item, .sobre-item{
     list-style: disc;
+    font-size: 1.1rem;
 }
 .car-button, .card-descricao{
     display: flex;
