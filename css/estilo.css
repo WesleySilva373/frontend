@@ -6,7 +6,7 @@
     
     --primary-bg-color: #0c0c0c;  /* cor de fundo  */
     /* bg = background = plano de fundo */
-    --secondary-bg-color: #fffaf8;/*  fundo abaixo do video */
+    --secondary-bg-color: #818181;/*  fundo abaixo do video */
     --primary-border-color: #0c0b0b;
     --secundary-border-color: #455efa;
 
@@ -137,8 +137,8 @@ p {
 }
 
 .header-logo .logo {
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 100px;
+    height: 100px;
 }
 
 .header-toggle {
@@ -159,6 +159,7 @@ p {
     align-items: center;
     background: var(--primary-bg-color);
     gap: 1rem;
+
 }
 .menu-item{
     width: 100%;
@@ -206,6 +207,7 @@ p {
 .menu-text {
     font-size: .75rem;
     text-transform: uppercase;
+    
 }
 /* 
 .header-nav {   menu desktop 
@@ -251,6 +253,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    
 }
 .main-content{
     display: flex;
@@ -263,6 +266,7 @@ p {
 }
 #home, .projetos, .sobre, .contato{
     padding: 2.5rem 1rem;
+    font-size: var(--text-color);
 }
 .tecnologias{
     display: flex;
@@ -302,7 +306,7 @@ p {
 .projetos{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2rem; /* gap espaçamento */
 }
 .projeto-container{
     display: flex;
@@ -343,7 +347,7 @@ p {
 }
 
 .card-descricao{
- color: var(--title-color);
+ color: var(--text-color);
  font-size: 1.3rem;
 }
 .card-lista, .sobre-lista{
