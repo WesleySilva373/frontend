@@ -6,7 +6,7 @@
     
     --primary-bg-color: #0c0c0c;  /* cor de fundo  */
     /* bg = background = plano de fundo */
-    --secondary-bg-color: #818181;/*  fundo abaixo do video */
+    --secondary-bg-color: #252424;/*  fundo abaixo do video */
     --primary-border-color: #0c0b0b;
     --secundary-border-color: #455efa;
 
@@ -245,9 +245,11 @@ p {
 }
 .btn-primary span{
    color: var(--#C7c8c9);
+
 }
 .btn-primary{
-   border: 1px solid var(--primary-color)
+   border: 1px solid var(--primary-color);
+   
 }
 #home{
     display: flex;
@@ -357,7 +359,7 @@ p {
     list-style: disc;
     font-size: 1.1rem;
 }
-.car-button, .card-descricao{
+.card-button, .card-descricao{
     display: flex;
     flex-flow: row wrap;
     justify-content: center ;
