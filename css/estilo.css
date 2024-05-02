@@ -9,6 +9,7 @@
     --secondary-bg-color: #252424;/*  fundo abaixo do video */
     --primary-border-color: #0c0b0b;
     --secundary-border-color: #455efa;
+    --three-color: #0f9df0;
 
     --title-color: #8cb0b0; /* cor de etxto principal */
     --text-color: #d8d8b2; /*  cor de texto */
@@ -384,5 +385,8 @@ p {
 .projetos .btn{
     width: auto;
     margin: auto;
+}
+.bi-award-fill{
+    color: var(--three-color) ;
 }
 
