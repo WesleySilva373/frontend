@@ -7,7 +7,7 @@
     --primary-bg-color: #0c0c0c;  /* cor de fundo  */
     /* bg = background = plano de fundo */
     --secondary-bg-color: #252424;/*  fundo abaixo do video */
-    --primary-border-color: #0c0b0b;
+    --primary-border-color: #f3ecec;
     --secundary-border-color: #455efa;
     --three-color: #0f9df0;
 
@@ -22,7 +22,7 @@
 :root [data-theme='light'] {
     --primary-color: #0B0B0F;
     --primary-bg-color: #E9E9E9;
-    --secondary-bg-color: #C7c8c9;
+    --secondary-bg-color: #0677e7;
     --primary-border-color:  #C7c8c9;
     --secondary-border-color: #9a9a9c;
 
@@ -403,7 +403,157 @@ p {
 }
 .sobre-logo{
     width: 100%;
-    object-fit: cover;
+    object-fit: cover;                   /*  imagem logo ? */
     object-position: center;
     border-radius: 50rem;
+    border-color: 22px solid var(--primary-color);
+
 }
+.sobre-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+     gap: 1.25rem;
+}
+.sobre-icones{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+     gap: 1.25rem;
+}
+.sobre-icones1 i {
+    font-size:1.25rem;
+
+}
+.sobre-content2 .col1,
+.sobre-content2 .col2{
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+}
+.sobre-content2 .col1 .row1,
+.sobre-content2 .col1 .row2{
+    display:flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.accordion-header{
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary-border-color);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+
+}
+.accordion-header span{
+    color: var(--title-color);
+}
+.accordion-header .start{
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+}
+.accordion-header.end,
+.accordion-item-active .accodion-body.end{
+    border-radius: 0rem 0rem 0.25rem 0.25re;
+}
+.accordion-item-active .accordion-item-end{
+    border-radius: 0;
+}
+.accodion-body{
+    display: none;
+    padding: 1.52rem;
+    flex-direction:column;
+    align-items: flex-start;
+    gap: .65rem;
+    border: 1px solid var(--primary-border-color);
+}
+.accordion-item-active .accordion-header{
+    background: var(--secondary-bg-color);
+}
+.accordion-item-active .accodion-body{
+    display: flex;
+}
+.accordion-item-active .bi-caret-down-fill{        
+    transform: rotate(180deg);
+}
+  /* contato */
+
+  .contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--primary-border-color);
+    border-bottom: 1px solid var(--secondary-border-color);
+  }
+  .contato p{
+    text-align: center;
+  }
+  .contato .btn{
+    width: auto;    /*  */
+  }
+
+  .contato{
+    text-transform: uppercase;
+  }
+  /* roda pé */
+  footer{
+    margin-bottom: 5rem;
+  }
+
+footer p {
+    font-size: .875rem;
+    text-align:center;
+    padding: 1rem;
+}
+/* responsividade */
+@media(min-width:.768rem) {
+      #header{
+        position: fixed;
+        border-bottom: 1px solid var( --primary-border-color);
+        background: var(--primary-bg-color);
+      }
+      .nav-mobile{
+        display: none;
+      }
+      .header-nav{
+       display: flex; 
+}
+.header-nav,
+.header-toggle{
+    min-width: 30%;
+}
+.h1{
+    font-size: 5rem;
+}
+.h2{
+    font-size: 3rem;
+}
+#home, .projetos, .sobre{
+    padding: 8rem 6rem 4rem 6rem;
+}
+
+..main-contat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.tecnologias{
+    padding: 6.25rem;
+    margin-top: -6rem
+}
+
+.contato{
+    padding: 6rem;
+}
+.contato p{
+    width: 80%;
+}
+
+}   
