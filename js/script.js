@@ -13,5 +13,25 @@ function changeTheme() {
 }
 
 toggleTheme.addEventListener("click", changeTheme);
+/* fim função  mudar de tema  */
 
+accordionHeaders.forEach(header => {
+header.addEventListener("click", () => {
+   const accordionItem = header.parenteElement;
+   const accoddionActive = accordionItem.classList.contains("active");
+       
+   accoddionActive ? accordionItem.classList.remove("active") : 
+   accordionItem.classList.add("active");
+  })
+
+ })
+/* fim accodion */
+menuLinks.forEach(item =>{
+  item.addEventListener("click",() => {
+ menuLinks.forEach(i => i.classList.remove("active"));
+ item.classList.add("active");
+  })
+
+})
+/* fim menu link */
 
